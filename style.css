@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    padding: 0;
+    margin: 0;
+}
+nav {
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 16px;
+    background-color: #cafdff;
+}
+/*
+  HEADER
+*/
+
+header {
+    background-color: #eadcff;
+    height: calc(100vh - 70px);
+    padding: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+h1 {
+    font-size: 72px;
+}
+.sub-header {
+    font-size: 36px;
+    margin: 16px 0 24px 0;
+}
+button {
+    background-color: #05c7cf;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 8px 16px;
+    font-size: 24px;
+    cursor: pointer;
+}
+a {
+    color: #000;
+}
+.logo {
+    width: 300px;
+    font-size: 24px;
+    font-weight: 700;
+}
+ul {
+    display: flex;
+}
+li {
+    list-style-type: none;
+    padding-left: 16px;
+}
+.row {
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#about,
+#discord,
+#contact,
+footer {
+    padding: 48px 0;
+}
+/*
+  About
+*/
+#about {
+    padding: 48px 0;
+    background-color: #f8ffdc;
+}
+h2 {
+    font-size: 60px;
+    text-align: center;
+    margin-bottom: 24px;
+}
+.section_description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.about__img--wrapper {
+    width: 40%;
+}
+img {
+    width: 100%;
+}
+.section__description-wrapper {
+    width: 60%;
+}
+.section__description--para {
+    font-size: 20px;
+    line-height: 1.5;
+
+}
+.section__description-wrapper,
+.about__img--wrapper {
+    padding: 0 24px;
+}
+
+/*
+  DISCORD
+*/
+
+
+#discord {
+    background-color: #cefeff;
+}
+/*
+  CONTACT
+*/
+
+#contact {
+    background-color: #dce9ff;
+
+}
+form {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    margin: 0 auto;
+    padding: 0 24px;
+    flex-direction: column
+}
+input,textarea {
+    margin-bottom: 24px;
+    padding: 6px 12px;
+    font-size: 20px
+}
+/*
+  FOOTER
+*/
+
+footer {
+    background-color: #aaf5ff;
+    flex-direction: column;
+    align-items: center;
+    display: flex
+    
+
+}
+.footer__logo {
+    max-width: 480px;
+    margin-bottom: 16px;
+}
+.footer__links {
+    margin-bottom: 32px;
+}
+.footer__link {
+    padding: 0 16px;
+}
+/* SMALL PHNES, TABLETS, LARGE SMARTPHONES */
+@media (max-width: 728px) {
+    .row {
+        flex-direction: column;
+    }
+    .home__description {
+        margin-bottom: 24px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .home__description--button {
+        max-width: 240px;
+    }
+    h1 {
+        text-align: center;
+        font-size: 60px;
+    }
+    .sub-header {
+        text-align: center;
+        font-size: 28px;
+    }
+    ul {
+        display: none;
+    }
+    .section_description {
+        flex-direction: column ;
+    }
+    .section__description-wrapper {
+        width: 100%;
+    }
+    .about__img--wrapper {
+        width: 100%;
+    }
+    #discord .section_description {
+        flex-direction: column-reverse;
+    }
+    footer {
+        padding: 48px 24px;
+    }
+    .footer__logo {
+        max-width: 360px;
+    }
+    .footer__link {
+        padding: 0 4px;
+        font-size: 18px;
+    }
+    .footer__links {
+        margin-bottom: 24px;
+    }
+
+}
